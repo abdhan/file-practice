@@ -1,11 +1,18 @@
-# File Operations Practice - v0.2
+# File Operations Practice - v0.3
 
 print("=== FILE PRACTICE ===")
-print("Testing WRITE mode")
 
-# Write to a file
+# First, write some data
+print("1. Testing WRITE mode")
 with open("output.txt", "w") as file:
     file.write("Hello from Python!\n")
-    file.write("This is write mode.\n")
+    file.write("This is line 2.\n")
+print("✓ Data written")
 
-print("✓ Data written to output.txt")
+# Now read it back
+print("\n2. Testing READ mode")
+with open("output.txt", "r") as file:
+    content = file.read()
+
+print("File contents:")
+print(content)
