@@ -1,0 +1,7 @@
+# Test output files - don't commit these
+output.txt
+test*.txt
+
+# Python cache
+__pycache__/
+*.pyc
